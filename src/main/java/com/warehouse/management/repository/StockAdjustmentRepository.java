@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.StockAdjustment;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface StockAdjustmentRepository {
-    StockAdjustment save(StockAdjustment entity);
-    Optional<StockAdjustment> findById(String id);
-    List<StockAdjustment> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface StockAdjustmentRepository extends JpaRepository<StockAdjustment, String> {
 }

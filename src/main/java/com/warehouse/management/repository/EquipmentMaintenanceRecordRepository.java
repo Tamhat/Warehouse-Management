@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.EquipmentMaintenanceRecord;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface EquipmentMaintenanceRecordRepository {
-    EquipmentMaintenanceRecord save(EquipmentMaintenanceRecord entity);
-    Optional<EquipmentMaintenanceRecord> findById(String id);
-    List<EquipmentMaintenanceRecord> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface EquipmentMaintenanceRecordRepository extends JpaRepository<EquipmentMaintenanceRecord, String> {
 }

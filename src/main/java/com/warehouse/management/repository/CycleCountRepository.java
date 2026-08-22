@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.CycleCount;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CycleCountRepository {
-    CycleCount save(CycleCount entity);
-    Optional<CycleCount> findById(String id);
-    List<CycleCount> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface CycleCountRepository extends JpaRepository<CycleCount, String> {
 }

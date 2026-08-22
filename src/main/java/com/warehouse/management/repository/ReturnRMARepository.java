@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.ReturnRMA;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ReturnRMARepository {
-    ReturnRMA save(ReturnRMA entity);
-    Optional<ReturnRMA> findById(String id);
-    List<ReturnRMA> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface ReturnRMARepository extends JpaRepository<ReturnRMA, String> {
 }

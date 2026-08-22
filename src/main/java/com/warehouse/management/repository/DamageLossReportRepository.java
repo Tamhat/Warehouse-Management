@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.DamageLossReport;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface DamageLossReportRepository {
-    DamageLossReport save(DamageLossReport entity);
-    Optional<DamageLossReport> findById(String id);
-    List<DamageLossReport> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface DamageLossReportRepository extends JpaRepository<DamageLossReport, String> {
 }

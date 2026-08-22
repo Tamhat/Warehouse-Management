@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.StockTransfer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface StockTransferRepository {
-    StockTransfer save(StockTransfer entity);
-    Optional<StockTransfer> findById(String id);
-    List<StockTransfer> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface StockTransferRepository extends JpaRepository<StockTransfer, String> {
 }

@@ -1,13 +1,9 @@
 package com.warehouse.management.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.warehouse.management.entity.Shipment;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ShipmentRepository {
-    Shipment save(Shipment entity);
-    Optional<Shipment> findById(String id);
-    List<Shipment> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface ShipmentRepository extends JpaRepository<Shipment, String> {
 }
