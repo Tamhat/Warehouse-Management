@@ -1,12 +1,11 @@
-package Warehouse Management;
-
 public class WarehouseService {
-    receiveGoods()
-    storeGoods()
-    moveGoods()
-    pickGoods()
-    packGoods()
-    dispatchGoods()
-    countInventory()
-}
 
+    public void registerWarehouse() {}
+    // RBAC: WarehouseAdmin
+
+    public void configureWarehouse() {}
+    // RBAC: WarehouseAdmin
+
+    public void closeWarehouse() {}
+    // RBAC: WarehouseManager
+}
