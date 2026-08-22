@@ -1,0 +1,13 @@
+package com.warehouse.management.service;
+
+public class CycleCountService {
+
+    public void scheduleCount() {}
+    // RBAC: WarehouseManager
+
+    public void performCount() {}
+    // RBAC: InventoryClerk, Auditor
+
+    public void reconcileDiscrepancy() {}
+    // RBAC: WarehouseManager
+}
