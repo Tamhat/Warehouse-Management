@@ -1,4 +1,4 @@
-package com.warehouse.management.service;
+package com.warehouse.management.service.operations;
 
 public class EquipmentService {
 
