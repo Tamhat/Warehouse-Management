@@ -1,5 +1,7 @@
 ## Warehouse Management — Actors & Objects
 
+A domain-driven backend system designed to orchestrate end-to-end warehouse operations—from goods receiving and inventory storage to order fulfillment, packing, and shipping.
+
 ### Actors
 
 | # | Actor | Role |
