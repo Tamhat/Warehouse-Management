@@ -46,5 +46,3 @@
 | 21 | **Invoice/Billing Record** | Billing document for outbound orders |
 
 ---
-
-Want me to fill the full form (attributes, relationships, actions, states, business rules) for all of these, same as the previous four domains?
